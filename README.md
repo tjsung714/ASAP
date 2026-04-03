@@ -139,13 +139,13 @@ At minimum, you should have:
 
 ### Run the pipeline
 
-1. Place `asap_pipeline_reviewed.m` in the project root.
+1. Place `asap_pipeline_matlab.m` in the project root.
 2. Open MATLAB.
 3. Change the current folder to the project root.
 4. Run the script:
 
 ```matlab
-asap_pipeline_reviewed
+asap_pipeline_matlab
 ```
 
 If the script is not placed in the project root, edit `path_root` at the top of the script.
