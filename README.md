@@ -90,16 +90,6 @@ The Python pipeline saves one NetCDF file per wildfire case for each step.
 
 Figures are saved as PNG files under each step directory.
 
-### Notes for Python users
-
-- The script assumes that `metadata.xlsx` contains at least the following columns:
-  - `Incid_Name`
-  - `Ig_Date`
-  - `Post_Date`
-  - `Pre_Date(const)`
-- The Python version uses `NetCDF` instead of `.mat` because labeled dimensions and time coordinates are easier to handle in Python.
-- If `netCDF4` is installed, compressed NetCDF output is used automatically.
-
 ---
 
 ## MATLAB version
