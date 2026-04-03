@@ -17,7 +17,7 @@ Place the scripts in the project root so that they can resolve paths automatical
 
 ```text
 project_root/
-├── asap_pipeline_reviewed.m
+├── asap_pipeline_matlab.m
 ├── asap_pipeline_python.py
 ├── requirements_python.txt
 ├── requirements_matlab.txt
