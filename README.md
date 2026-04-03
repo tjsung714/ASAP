@@ -90,29 +90,6 @@ The Python pipeline saves one NetCDF file per wildfire case for each step.
 
 Figures are saved as PNG files under each step directory.
 
-### Read the outputs in Python
-
-Example for step 2:
-
-```python
-import xarray as xr
-
-ds = xr.open_dataset("02_ASAP_step2/Dataset/<case_name>.nc")
-print(ds)
-ndvi = ds["NDVI"]
-```
-
-Example for step 3:
-
-```python
-import xarray as xr
-
-ds = xr.open_dataset("03_ASAP_step3/Dataset/<case_name>.nc")
-print(ds["dSI"])
-print(ds["pdSI"])
-print(ds["COEF"])
-```
-
 ### Notes for Python users
 
 - The script assumes that `metadata.xlsx` contains at least the following columns:
