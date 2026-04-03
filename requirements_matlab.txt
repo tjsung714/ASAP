@@ -1,0 +1,40 @@
+MATLAB requirements for ASAP burn severity analysis pipeline
+===========================================================
+
+Recommended MATLAB release
+- MATLAB R2021b or later recommended
+- Older releases may also work, but they were not verified here
+
+Required products
+- MATLAB
+- Image Processing Toolbox
+- Mapping Toolbox
+
+Functions/features used by this script
+- readtable
+- datetime
+- geotiffread
+- geotiffinfo
+- pixcenters
+- imdilate
+- strel
+- bwboundaries
+- polyfit
+- surface
+- print
+
+Input data expectations
+- metadata.xlsx
+- FIRMS CSV files
+- Landsat GeoTIFF files
+- NLCD GeoTIFF files
+- MTBS/WFIGS raster files
+
+Output format
+- Step outputs are saved as .mat files
+- Figures are saved as .png files
+
+Run command
+- Change current folder to the project root
+- Run:
+  asap_pipeline_reviewed
