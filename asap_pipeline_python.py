@@ -3,7 +3,7 @@
 """
 ASAP burn severity analysis pipeline in Python.
 
-This script integrates the three ASAP preprocessing steps into a single file:
+This script integrates the three ASAP preprocessing steps:
 
     Step 1. Definition of the analysis area
     Step 2. Preparation of analysis imagery
