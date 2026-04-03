@@ -129,24 +129,6 @@ The MATLAB pipeline saves one MAT file per wildfire case for each step.
 
 Figures are saved as PNG files under each step directory.
 
-### Notes for MATLAB users
-
-- The MATLAB version is best suited for users who want to keep the original MATLAB-based workflow.
-- The output format is `.mat`, which is convenient inside MATLAB but less convenient than NetCDF for labeled multi-dimensional analysis in Python.
-- If you need Python-friendly outputs, use the Python version.
-
----
-
-## Main differences between the MATLAB and Python versions
-
-| Item | MATLAB | Python |
-|---|---|---|
-| Main script | `asap_pipeline_reviewed.m` | `asap_pipeline_python.py` |
-| Output dataset format | `.mat` | `.nc` |
-| Figure format | `.png` | `.png` |
-| Best for | Existing MATLAB workflow | Python analysis and downstream processing |
-| Array handling | Numeric arrays in MAT files | Labeled arrays via `xarray` |
-
 ---
 
 ## Troubleshooting
@@ -163,19 +145,3 @@ Figures are saved as PNG files under each step directory.
 - **`Undefined function 'imdilate'` or `bwboundaries`**: Image Processing Toolbox is missing
 - **`Undefined function 'geotiffread'` or `geotiffinfo`**: Mapping Toolbox is missing
 - **Path-related errors**: check whether the script is placed in the project root or edit `path_root`
-
----
-
-## Suggested citation / archive setup
-
-A common release pattern is:
-
-- Code on **GitHub**
-- Archived release on **Zenodo**
-
-For reproducibility, archive:
-
-- the script version used for the paper
-- this README
-- dependency files
-- a short description of the expected input folder structure
