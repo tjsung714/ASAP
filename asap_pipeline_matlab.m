@@ -1,5 +1,5 @@
 %% ASAP burn severity analysis pipeline
-% Integrates the three ASAP preprocessing steps into a single script
+% Integrates the three ASAP preprocessing steps
 %
 %   Step 1. Definition of the analysis area
 %   Step 2. Preparation of analysis imagery
