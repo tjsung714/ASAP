@@ -22,8 +22,7 @@ clear; close all; clc;
 % If this script is placed in the project root, the default below is enough.
 % Otherwise, set "path_root" manually.
 path_root = fileparts(mfilename('fullpath'));
-% path_root = 'T:\tjsung\Research\L8_BurnSeverity_CONUS\Github\';
-% path_root = '/share/wildfire-2/tjsung/Research/L8_BurnSeverity_CONUS/Github/';
+% path_root = '/project_root';
 
 % Main folders
 paths = get_project_paths(path_root);
