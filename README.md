@@ -158,6 +158,8 @@ Figures are saved as PNG files under each step directory.
 ### MATLAB
 
 - **`Undefined function 'imdilate'` or `bwboundaries`**: Image Processing Toolbox is missing
+- **`Undefined function 'geotiffread'` or `geotiffinfo`**: Mapping Toolbox is missing
+- **Path-related errors**: check whether the script is placed in the project root or edit `path_root`
 
 ## Citation
 
@@ -166,5 +168,3 @@ and the Zenodo record:
 
 - Code repository: ASAP GitHub repository
 - Dataset and example outputs: Zenodo DOI 10.5281/zenodo.19399543
-- **`Undefined function 'geotiffread'` or `geotiffinfo`**: Mapping Toolbox is missing
-- **Path-related errors**: check whether the script is placed in the project root or edit `path_root`
