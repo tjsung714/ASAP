@@ -14,8 +14,7 @@ The workflow integrates three steps into a single pipeline.
 
 ## Data and example outputs
 
-The input datasets required to run the ASAP pipeline and example outputs are
-available on Zenodo:
+The input datasets required to run the ASAP pipeline, along with related example outputs, are available on Zenodo:
 
 **Zenodo DOI**
 10.5281/zenodo.19399543
