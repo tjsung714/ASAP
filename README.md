@@ -1,11 +1,16 @@
-# ASAP
+# ASAP burn severity analysis pipeline
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19399543.svg)](https://doi.org/10.5281/zenodo.19399543)
 
-ASAP is a preprocessing workflow for satellite-based burn severity analysis
-that consists of three steps:
-1. definition of the analysis area
-2. preparation of analysis imagery
-3. phenology detrending
+This repository provides two implementations of the ASAP preprocessing workflow for burn severity analysis.
+
+- **MATLAB version** saves step outputs as `.mat`
+- **Python version** saves step outputs as `.nc` (NetCDF via `xarray`)
+
+The workflow integrates three steps into a single pipeline.
+
+1. Definition of the analysis area
+2. Preparation of analysis imagery
+3. Phenology detrending
 
 ## Data and example outputs
 
@@ -27,27 +32,6 @@ intermediate and final preprocessing results.
 In this repository, the Python implementation saves outputs as NetCDF
 (`.nc`) files, whereas the MATLAB implementation saves outputs as MAT
 (`.mat`) files. Figure outputs are saved as PNG files in both versions.
-
-## Citation
-
-If you use the code or accompanying datasets, please cite this repository
-and the Zenodo record:
-
-- Code repository: ASAP GitHub repository
-- Dataset and example outputs: Zenodo DOI 10.5281/zenodo.19399543
-
-# ASAP burn severity analysis pipeline
-
-This repository provides two implementations of the ASAP preprocessing workflow for burn severity analysis.
-
-- **MATLAB version** saves step outputs as `.mat`
-- **Python version** saves step outputs as `.nc` (NetCDF via `xarray`)
-
-The workflow integrates three steps into a single pipeline.
-
-1. Definition of the analysis area
-2. Preparation of analysis imagery
-3. Phenology detrending
 
 ## Recommended repository structure
 
@@ -181,5 +165,13 @@ Figures are saved as PNG files under each step directory.
 ### MATLAB
 
 - **`Undefined function 'imdilate'` or `bwboundaries`**: Image Processing Toolbox is missing
+
+## Citation
+
+If you use the code or accompanying datasets, please cite this repository
+and the Zenodo record:
+
+- Code repository: ASAP GitHub repository
+- Dataset and example outputs: Zenodo DOI 10.5281/zenodo.19399543
 - **`Undefined function 'geotiffread'` or `geotiffinfo`**: Mapping Toolbox is missing
 - **Path-related errors**: check whether the script is placed in the project root or edit `path_root`
