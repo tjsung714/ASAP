@@ -161,6 +161,8 @@ Figures are saved as PNG files under each step directory.
 - **`Undefined function 'geotiffread'` or `geotiffinfo`**: Mapping Toolbox is missing
 - **Path-related errors**: check whether the script is placed in the project root or edit `path_root`
 
+---
+
 ## Citation
 
 If you use the code or accompanying datasets, please cite this repository
